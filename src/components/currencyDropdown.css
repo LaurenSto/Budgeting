@@ -1,0 +1,26 @@
+/* CurrencyDropdown.css */
+
+.currency-dropdown {
+    /* Add container styles */
+    margin-bottom: 20px;
+}
+
+.currency-select {
+    /* Add select element styles */
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    /* Add hover effect */
+    transition: background-color 0.3s ease; /* Smooth transition */
+
+}
+
+
+.currency-select:hover {
+    background-color: limegreen; /* Change background color on hover */
+    font-style: italic;
+
+}
