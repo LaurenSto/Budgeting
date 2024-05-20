@@ -11,6 +11,7 @@ import GlobalCurrency from './components/GlobalCurrency';
 
 
 
+
 const App = () => {
     return (
         <AppProvider>

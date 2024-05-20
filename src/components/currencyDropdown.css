@@ -3,24 +3,26 @@
 .currency-dropdown {
     /* Add container styles */
     margin-bottom: 20px;
+    margin-left: 15px;
 }
 
 .currency-select {
     /* Add select element styles */
     font-size: 14px;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(191, 180, 180, 0.741);
     border-radius: 4px;
-    background-color: white;
-    color: #333;
+    background-color: limegreen;
+    color: white;
     /* Add hover effect */
     transition: background-color 0.3s ease; /* Smooth transition */
-
 }
 
 
 .currency-select:hover {
     background-color: limegreen; /* Change background color on hover */
-    font-style: italic;
+    font-style: bold;
+    color: white;
+
 
 }
