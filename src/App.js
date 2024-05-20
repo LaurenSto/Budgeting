@@ -10,6 +10,7 @@ import RemainingBudget from './components/Remaining';
 import GlobalCurrency from './components/GlobalCurrency';
 
 
+
 const App = () => {
     return (
         <AppProvider>
