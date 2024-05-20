@@ -4,8 +4,17 @@ import { AppContext } from '../context/AppContext';
 const Budget = () => {
     const { budget } = useContext(AppContext);
     const [newBudget, setNewBudget] = useState(budget);
+    const [error, setError] = useState('');
+
     const handleBudgetChange = (event) => {
-        setNewBudget(event.target.value);
+        const inputValue = parseFloat(event.target.value);
+
+        if (!isNaN(inputValue) && inputValue <= 20000) {
+            setNewBudget(inputValue);
+            setError(''); // Clear any previous error
+        } else {
+            setError('Budget must be less than or equal to 20,000');
+        }
     };
 
     return (
@@ -17,6 +26,7 @@ const Budget = () => {
                 value={newBudget}
                 onChange={handleBudgetChange}
             />
+            {error && <div className="text-danger">{error}</div>}
         </div>
     );
 };
