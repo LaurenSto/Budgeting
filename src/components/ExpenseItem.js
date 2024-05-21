@@ -47,4 +47,32 @@ const ExpenseItem = (props) => {
     );
 };
 
+// Define button style object
+const plus_buttonStyle = {
+    padding: '5px 10px',
+    fontSize: '16px',
+    borderRadius: '5px',
+    backgroundColor: '#4CAF50', /* Green */
+    border: 'none',
+    color: 'white',
+    textAlign: 'center',
+    textDecoration: 'none',
+    display: 'inline-block',
+    cursor: 'pointer',
+};
+
+// Define button style object
+const minus_buttonStyle = {
+    padding: '5px 10px',
+    fontSize: '16px',
+    borderRadius: '5px',
+    backgroundColor: 'red', /* Red */
+    border: 'none',
+    color: 'white',
+    textAlign: 'center',
+    textDecoration: 'none',
+    display: 'inline-block',
+    cursor: 'pointer',
+};
+
 export default ExpenseItem;
