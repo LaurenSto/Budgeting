@@ -11,7 +11,8 @@ const CurrencyDropdown = () => {
 
     return (
         <div className='alert alert-secondary d-flex align-items-center'>
-            <label htmlFor="currency-select">Select Currency:</label>
+           <div Class='me-2'></div>
+            <label htmlFor="currency-select">Currency: </label>
             <select
                 id="currency-select"
                 value={selectedCurrency}
@@ -19,10 +20,10 @@ const CurrencyDropdown = () => {
                 className='currency-select'
                 >
             
-                <option value="$">£ Pound</option>
-                <option value="€">€ Euro</option>
-                <option value="£">$ Dollar</option>
-                <option value="₹">₹ Rupee</option>
+                <option value="$">(£ Pound)</option>
+                <option value="€">(€ Euro)</option>
+                <option value="£">($ Dollar)</option>
+                <option value="₹">(₹ Rupee)</option>
                 {/* Add more currency options as needed */}
             </select>
         </div>

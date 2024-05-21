@@ -12,7 +12,7 @@
     padding: 8px;
     border: 1px solid rgba(191, 180, 180, 0.741);
     border-radius: 4px;
-    background-color: limegreen;
+    background-color: darkgray;
     color: white;
     /* Add hover effect */
     transition: background-color 0.3s ease; /* Smooth transition */
