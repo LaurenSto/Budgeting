@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import './currencyDropdown.css'
+import './GlobalCurrencyDropdown.css'
 
 const CurrencyDropdown = () => {
     const [selectedCurrency, setSelectedCurrency] = useState('$'); // Default currency
-
     const handleCurrencyChange = (event) => {
         setSelectedCurrency(event.target.value);
         // You can perform additional actions based on the selected currency
+        
     };
 
     return (
