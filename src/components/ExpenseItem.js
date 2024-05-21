@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { TiDelete } from 'react-icons/ti';
 import { AppContext } from '../context/AppContext';
+import './ExpenseItem.css'; // Import CSS file for Expense component
 
 const ExpenseItem = (props) => {
     const { dispatch } = useContext(AppContext);
@@ -40,39 +41,11 @@ const ExpenseItem = (props) => {
         <tr>
             <td>{props.name}</td>
             <td>£{props.cost}</td>
-            <td><button onClick={() => increaseAllocation(props.name)}>+</button></td>
-            <td><button onClick={() => decreaseAllocation(props.name)}>-</button></td>
+            <td><button className="plus-button" onClick={() => increaseAllocation(props.name)}>+</button></td>
+            <td><button className="minus-button" onClick={() => decreaseAllocation(props.name)}>-</button></td>
             <td><TiDelete size='1.5em' onClick={handleDeleteExpense} /></td>
         </tr>
     );
-};
-
-// Define plus_button_style object
-const plus_buttonStyle = {
-    padding: '5px 10px',
-    fontSize: '16px',
-    borderRadius: '5px',
-    backgroundColor: '#4CAF50', /* Green */
-    border: 'none',
-    color: 'white',
-    textAlign: 'center',
-    textDecoration: 'none',
-    display: 'inline-block',
-    cursor: 'pointer',
-};
-
-// Define minus_button_style object
-const minus_buttonStyle = {
-    padding: '5px 10px',
-    fontSize: '16px',
-    borderRadius: '5px',
-    backgroundColor: 'red', /* Red */
-    border: 'none',
-    color: 'white',
-    textAlign: 'center',
-    textDecoration: 'none',
-    display: 'inline-block',
-    cursor: 'pointer',
 };
 
 export default ExpenseItem;
