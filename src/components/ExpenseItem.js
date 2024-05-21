@@ -47,7 +47,7 @@ const ExpenseItem = (props) => {
     );
 };
 
-// Define button style object
+// Define plus_button_style object
 const plus_buttonStyle = {
     padding: '5px 10px',
     fontSize: '16px',
@@ -61,7 +61,7 @@ const plus_buttonStyle = {
     cursor: 'pointer',
 };
 
-// Define button style object
+// Define minus_button_style object
 const minus_buttonStyle = {
     padding: '5px 10px',
     fontSize: '16px',
