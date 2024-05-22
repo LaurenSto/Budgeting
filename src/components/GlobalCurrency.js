@@ -20,9 +20,9 @@ const CurrencyDropdown = () => {
                 className='currency-select'
                 >
             
-                <option value="$">(£ Pound)</option>
+                <option value="£">(£ Pound)</option>
                 <option value="€">(€ Euro)</option>
-                <option value="£">($ Dollar)</option>
+                <option value="$">($ Dollar)</option>
                 <option value="₹">(₹ Rupee)</option>
                 {/* Add more currency options as needed */}
             </select>
