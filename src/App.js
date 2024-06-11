@@ -4,7 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Code to import Budget.js
 import Budget from './components/Budget';
-
+// Budget component
+    <div className='col-sm'>
+        <Budget />
+    </div>
 // Add code to import the other components here under
 
 
