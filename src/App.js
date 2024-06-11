@@ -18,12 +18,15 @@ const App = () => {
                         {
                             // Budget component
                             <div className='col-sm'>
-                            <Budget />
+                                <Budget />
                             </div>
                         }        
 
                         {
-                            /* Add Remaining component here*/
+                            //Remaining component
+                            <div className='col-sm'>
+                                <Remaining />
+                            </div>
                         }        
 
                         {
