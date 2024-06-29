@@ -7,12 +7,16 @@ import ExpenseTotal from './components/ExpenseTotal';
 import ExpenseList from './components/ExpenseList';
 import AllocationForm from './components/AllocationForm';
 import RemainingBudget from './components/Remaining';
+import logo from './assets/cash.png';
 
 const App = () => {
     return (
         <AppProvider>
             <div className='container'>
-                <h1 className='mt-3'>Company's Budget Allocation</h1>
+                <div className='title'>
+                    <img src={logo} alt="Logo" id="logo"/>
+                    <h1 className='mt-3'>Company's Budget Allocation</h1>
+                </div>
                 <div className='row mt-3'>
                     <div className='col-sm'>
                         <Budget />

@@ -1,13 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div {
+    color: #8B4C70;
+    font-weight: bold;
+    padding: 5px;
+    font-family: "Capriola", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 50px;
+}
+
+.alert {
+    background: linear-gradient(75deg, #CDE0C9, #68B2A0);
+    height: 90%;
+    text-align: center;
+}
+
+.alert-primary {
+    background: linear-gradient(75deg, #ABD1DC, #7097A8);
+    
+}
+
+.alert-secondary {
+    background: linear-gradient(75deg, #E4C7B7, #8B4C70);
+}
+
+.alert input {
+    color: #8B4C70;
+    border: solid 2px #8B4C70;
+    border-radius: 4px; 
+    padding: 2px 10px;
+}
+
+#increase {
+    background: #7097A8;
+    color: white; 
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 12px;
+}
+
+#decrease {
+    background: #8B4C70;
+    color: white; 
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 12px;
+}
+
+#btn {
+    background: #7097A8;
+    color: white; 
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    width: 130px;
+    height: 40px;
+}
+
+#btn:hover, #increase:hover {
+    background: #8B4C70;
+}
+
+#decrease:hover {
+    background: #7097A8; 
+}
+
+#delete {
+    color: #8B4C70;
+}
+
+#delete:hover {
+    color:#7097A8;
+}
+
+#labelAll, #labelDep, #labelCur {
+    background-color: white;
+    color: #8B4C70; 
+    font-weight: bold;
+    border: none;
+    padding: 4px 12px;
+}
+
+#inputGroupSelect01, #inputGroupSelect02, #currencySelect {
+    height: 40px;
+    width: 10%;
+    color: #7097A8;
+    border: solid 2px #8B4C70;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+
+#cost {
+    color: #8B4C70;
+    padding: 4px;
+    height: 40px;
+    border: solid 2px #8B4C70;
+    border-radius: 4px;
+    padding: 2px 10px;
 }

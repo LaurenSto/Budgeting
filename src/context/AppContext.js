@@ -31,18 +31,16 @@ export const AppReducer = (state, action) => {
                 }
             }
             case 'RED_EXPENSE':
-                const red_expenses = state.expenses.map((currentExp)=> {
-                    if (currentExp.name === action.payload.name && currentExp.cost - action.payload.cost >= 0) {
-                        currentExp.cost =  currentExp.cost - action.payload.cost;
-                        budget = state.budget + action.payload.cost
-                    }
-                    return currentExp
-                })
-                action.type = "DONE";
-                return {
-                    ...state,
-                    expenses: [...red_expenses],
-                };
+            const red_expenses = state.expenses.map((currentExp) => {
+                if (currentExp.name === action.payload.name && currentExp.cost - action.payload.cost >= 0) {
+                    currentExp.cost = currentExp.cost - action.payload.cost;
+                }
+                return currentExp;
+            });
+            return {
+                ...state,
+                expenses: [...red_expenses],
+            };
             case 'DELETE_EXPENSE':
             action.type = "DONE";
             state.expenses.map((currentExp)=> {
@@ -64,12 +62,12 @@ export const AppReducer = (state, action) => {
             return {
                 ...state,
             };
-        case 'CHG_CURRENCY':
-            action.type = "DONE";
-            state.currency = action.payload;
-            return {
-                ...state
-            }
+            
+            case 'CHG_CURRENCY':
+                return {
+                    ...state,
+                    currency: action.payload,
+                };
 
         default:
             return state;
@@ -83,7 +81,7 @@ const initialState = {
         { id: "Marketing", name: 'Marketing', cost: 50 },
         { id: "Finance", name: 'Finance', cost: 300 },
         { id: "Sales", name: 'Sales', cost: 70 },
-        { id: "Human Resource", name: 'Human Resource', cost: 40 },
+        { id: "HR", name: 'HR', cost: 40 },
         { id: "IT", name: 'IT', cost: 500 },
     ],
     currency: '£'
