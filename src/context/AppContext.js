@@ -105,16 +105,17 @@ export const AppProvider = (props) => {
         }, 0);
         remaining = state.budget - totalExpenses;
     }
+    const contextValue = {
+        expenses: state.expenses,
+        budget: state.budget,
+        remaining: remaining,
+        dispatch,
+        currency: state.currency
+    };
 
     return (
         <AppContext.Provider
-            value={{
-                expenses: state.expenses,
-                budget: state.budget,
-                remaining: remaining,
-                dispatch,
-                currency: state.currency
-            }}
+            value={contextValue}
         >
             {props.children}
         </AppContext.Provider>
